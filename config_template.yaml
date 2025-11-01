@@ -1,0 +1,22 @@
+Yahoo_Settings:
+  consumer_key: xyz123
+  consumer_secret: xyz123
+  current_year: 2025
+  league_id: 1231234
+  REQUEST_AUTH_URL: https://api.login.yahoo.com/oauth2/request_auth
+  REQUEST_TOKEN_URL: https://api.login.yahoo.com/oauth2/get_token
+  BASE_YAHOO_API_URL: https://fantasysports.yahooapis.com/fantasy/v2/
+Email_Settings:
+  smtpServer: smtp.gmail.com
+  port: 465
+  sendereMail: johndoe@example.com
+  receivereMail: johndoe@example.com
+  subject: ShameBot
+  password: abcd efgh ijkl mnop
+Roster_Limits:
+  QB: 3
+  RB: 4
+  WR: 6
+  TE: 3
+  K: 3
+  DEF: 3
