@@ -1,9 +1,9 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2822
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
 {\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red255\green255\blue255;\red0\green0\blue0;
-\red252\green118\blue111;\red252\green118\blue111;\red255\green250\blue131;}
+\red252\green118\blue111;\red255\green250\blue131;}
 {\*\expandedcolortbl;;\cssrgb\c20000\c20000\c20000;\cssrgb\c100000\c100000\c100000;\csgray\c0\c0;
-\cssrgb\c100000\c55025\c50890;\cssrgb\c100000\c55025\c50890;\cssrgb\c100000\c97501\c58325;}
+\cssrgb\c100000\c55025\c50890;\cssrgb\c100000\c97501\c58325;}
 \margl1440\margr1440\vieww21320\viewh13480\viewkind0
 \deftab720
 \pard\pardeftab720\partightenfactor0
@@ -28,8 +28,6 @@ This script will check your Yahoo Fantasy Football league to see if any teams ha
 	\'93py -m pip install requests\'94 (on Mac \'93pip install requests\'94)\
 	\'93py -m pip install xmltodict\'94 (on Mac \'93pip install xmltodict\'94)\
 	\cb5 \'93py -m pip install pyyaml\'94 (on Mac \'93pip install pyyaml\'94) - NOT SURE IF NEEDED\cb1 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
-\cf0 \cb6 - Steps for downloading package\cb1 \
 - Create configuration file\
 	- Make a copy of \'93config_template.yaml\'94 called \'93config.yaml\'94\
 	- Open \'93config.yaml\'94 and edit as noted in the steps below\
@@ -52,7 +50,7 @@ https://developer.yahoo.com/apps/}}\cf2 \cb3 \expnd0\expndtw0\kerning0
 	- Copy the  \'93Client Secret\'94 value and enter it in \'93config.yaml\'94 as the \'93consumer_secret\'94 value\
 - In a web browser navigate to your Yahoo Fantasy Football league\'92s page\
 	- Take note of the ID number in the URL for the league page. It will look something like below, the highlighted part is the league ID:\
-	https://football.fantasysports.yahoo.com/?lid=\cb7 1231234\
+	https://football.fantasysports.yahoo.com/?lid=\cb6 1231234\
 \pard\pardeftab720\partightenfactor0
 \cf2 \cb4 	- Copy this number and enter it in \'93config.yaml\'94 as the \'93league_id\'94 value\cb3 \
 - In order to for the script to send an email you will need to create an app password in a google account\
@@ -65,8 +63,8 @@ https://developer.yahoo.com/apps/}}\cf2 \cb3 \expnd0\expndtw0\kerning0
 	- Scroll to the bottom and look for a section called \'93App passwords\'94\
 		- If you see that section click on the right arrow\
 		- If you do not see that section go to the address bar and cut off everything from \'93signinoptions\'94 right and replace it will \'93apppasswords\'94\
-			- I.e. https://myaccount.google.com/u/0/\cb7 signinoptions/xyz123\cb3 \
-			- Change to https://myaccount.google.com/u/0/\cb7 apppasswords\
+			- I.e. https://myaccount.google.com/u/0/\cb6 signinoptions/xyz123\cb3 \
+			- Change to https://myaccount.google.com/u/0/\cb6 apppasswords\
 \cb4 			- The /u/0 may not be there, so the address could simply be https://myaccount.google.com/apppasswords\
 	- Type in a name for the app password and click \'93Create\'94. This can be anything, it is just for your reference.\
 	- Copy the app password that is shown in the pop up window and enter it in \'93config.yaml\'94 as the \'93password\'94 value\
@@ -123,9 +121,8 @@ https://developer.yahoo.com/apps/}}\cf2 \cb3 \expnd0\expndtw0\kerning0
 \f1\b \cf2 \
 \pard\pardeftab720\partightenfactor0
 \cf2 Steps to setup the script each new season:\
-\pard\pardeftab720\partightenfactor0
 
-\f0\b0 \cf2 - Navigate to the YahooFantasyShameBot directory and delete tokenData.conf if it already exists\
+\f0\b0 - Navigate to the YahooFantasyShameBot directory and delete tokenData.conf if it already exists\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
 \cf0 \cb1 \kerning1\expnd0\expndtw0 - Open \'93config.yaml\'94 and edit as noted in the steps below\
 	- Set the \'93current_year\'94 value to the current league year\
@@ -134,7 +131,7 @@ https://developer.yahoo.com/apps/}}\cf2 \cb3 \expnd0\expndtw0\kerning0
 \cf2 \cb3 \expnd0\expndtw0\kerning0
 - In a web browser navigate to your Yahoo Fantasy Football league\'92s page\
 	- Take note of the ID number in the URL for the league page. It will look something like below, the highlighted part is the league ID:\
-	https://football.fantasysports.yahoo.com/?lid=\cb7 1231234\
+	https://football.fantasysports.yahoo.com/?lid=\cb6 1231234\
 \pard\pardeftab720\partightenfactor0
 \cf2 \cb4 	- Copy this number and enter it in \'93config.yaml\'94 as the \'93league_id\'94 value\cb3 \
 - Run ShameBot.py manually (Open in IDLE (python editor) and press F5)\
